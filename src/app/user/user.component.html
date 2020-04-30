@@ -1,0 +1,32 @@
+<br/>
+<div class="container row p-5 m-1">
+    <div class="col-6">
+        <h1 class="headFontStyle userHead">USERS</h1>
+    </div>
+    <div class="col-3 offset-3">
+        <a class="btn btn-primary btn-lg active btn-hover mt-5" aria-pressed="true" role="button" href="/registration">Register</a> 
+    </div>        
+    <div class="col-12 p-3">
+        <table class="table table-hover " style="width:100%">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">UserName</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Full Name</th>
+                    <th></th>
+                </tr>                
+            </thead>
+            <tbody class="tbody">
+                <tr *ngFor="let user of service.Users">
+                    <td scope="row">{{user.UserName}}</td>
+                    <td>{{user.Email}}</td>
+                    <td>{{user.FullName}}</td>
+                    <td>
+                        <i class="fas fa-pencil-alt mr-3 icon-hover" (click)="editUser(user)"></i>
+                        <i class="far fa-trash-alt icon-hover" (click)="deleteUser(user)"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>        
+</div>

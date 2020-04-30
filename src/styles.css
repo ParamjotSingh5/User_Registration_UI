@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color:white;
+}
+
+input.form-control,input.form-control:focus{
+    
+    color: black;
+    border-color: black;
+    border-radius: 2px;    
+}
+
+input.form-control:focus{
+    box-shadow: none;
+    border-bottom-color: black;
+}
+
+button[type=submit].btn{
+    border-radius: 4px;
+    background-color: #6d381e;
+    color: white;
+}
+
+div.form-group label{
+    color: black;
+    font-weight: bold;
+}
+
+div.form-group.required>label:first-child:after{
+    content:'*';
+    color: #dc3545;
+	padding-left: 5px;
+}
+
+#toast-container > div {
+    opacity:1;
+}
+
+form{
+    margin: 0px 16px;
+}
+
+div.side-header{
+    border:3px solid black;
+}
+
+h1.headFontStyle{
+    font-family: 'Josefin Sans', sans-serif;    
+    
+    text-align: center;
+    margin-top: -20px;
+    display:block;
+    font-size: 9.5em;
+    font-weight: bold;    
+    background-size: cover;
+}
+
+h1.userHead{
+    background: url(https://media1.giphy.com/media/12B6jgPAAk0qKQ/source.gif) 0px -145px no-repeat;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h1.SignUp{
+    background: url(https://media1.giphy.com/media/12B6jgPAAk0qKQ/source.gif)   -22px 4px no-repeat;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+a.btn-hover{
+    cursor: pointer;
+}
+
+i.icon-hover{
+    cursor: pointer;
+}
